@@ -1,44 +1,59 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Head from "next/head";
-import { ThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import theme from "../src/theme";
+import React from 'react'
+import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react'
+import customTheme from '../styles/theme'
+import { Global, css } from '@emotion/react'
 
-import Navbar from '../components/Navbar'
+import Layout from "../components/Layout"
 
-export default function MyApp(props) {
-  const { Component, pageProps } = props;
-
-  React.useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
-    }
-  }, []);
+const GlobalStyle = ({ children }) => {
+  const { colorMode } = useColorMode()
 
   return (
-    <React.Fragment>
-      <Head>
-        <title>Lam-Anh Le</title>
-        <link rel="icon" href="/Lam-Logo.png" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-      </Head>
-      <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <Navbar />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </React.Fragment>
-  );
+    <>
+      <Global
+        styles={css`
+            ::selection {
+              background-color: #90CDF4;
+              color: #fefefe;
+            }
+            ::-moz-selection {
+              background: #ffb7b7;
+              color: #fefefe;
+            }
+            html {
+              min-width: 356px;
+              scroll-behavior: smooth;
+            }
+            #__next {
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+              background: ${colorMode === 'light' ? "#F0FFF4" : '#1A202C'};
+            }
+        `}
+      />
+      {children}
+    </>
+  )
 }
 
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};
+function MyApp({ Component, pageProps }) {
+  return (
+    <ChakraProvider resetCSS theme={customTheme}>
+      <ColorModeProvider
+        options={{
+          initialColorMode: "light",
+          useSystemColorMode: true,
+        }}
+      >
+        <GlobalStyle>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </GlobalStyle>
+      </ColorModeProvider>
+    </ChakraProvider>
+  )
+}
+
+export default MyApp
