@@ -56,7 +56,7 @@ export default function About() {
     imageUrl: "../portfolio-app.png",
     imageAlt: "Screenshot of Portfolio Project",
     gh: "https://github.com/xlnl/lam-portfolio",
-    dep: "https://lamanhle.herokuapp.com/",
+    dep: "https://lam-anhle.vercel.app/",
     title: "Lam's Portfolio",
     description: "A Next.js professional portfolio bootstrapped with React, utilizing Chakra-UI to showcase me, myself, and I!"
   }
