@@ -93,6 +93,13 @@ const Layout = ({ children }) => {
                                     </Button> */}
                                 </NextLink>
                             </MenuItem>
+                            <MenuItem>
+                                <NextLink href="https://drive.google.com/file/d/1vV4zCZ4s8uK_wNQew6Um50fXeuAKX6An/view?usp=sharing" passHref> Resume
+                                    {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                                        Contact
+                                    </Button> */}
+                                </NextLink>
+                            </MenuItem>
                         </MenuList>
                     </Menu>
             </StickyNav >
