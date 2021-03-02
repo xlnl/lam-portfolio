@@ -3,8 +3,11 @@ import {
   Text,
   Stack, 
   Flex, 
-  Heading
+  Heading,
+  HStack,
 } from '@chakra-ui/react'
+
+// import { Image } from "next/image"
 
 export default function About() {
   const { colorMode } = useColorMode()
@@ -40,6 +43,7 @@ export default function About() {
         <br></br>
         <Text color={colorSecondary[colorMode]}>{aboutData.p3}</Text>
       </Flex>
+
     </Stack>
   )
 }

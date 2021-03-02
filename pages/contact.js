@@ -3,7 +3,11 @@ import {
   Text,
   Stack, 
   Flex, 
-  Heading
+  Heading,
+  Spacer,
+  Image,
+  HStack,
+  Link
 } from '@chakra-ui/react'
 
 export default function About() {
@@ -24,13 +28,25 @@ export default function About() {
     >
       <Flex
         flexDirection="column"
-        justifyContent="flex-start"
-        alignItems="flex-start"
+        justifyContent="center"
+        alignItems="center"
         maxWidth="700px"
       >
-        <Heading mb={2}>Contact Me!</Heading>
-        <Text color={colorSecondary[colorMode]}>lamanhle@gmail.com</Text>
+        <Heading mb={2}>Let's Connect!</Heading>
+        <HStack>
+          <Link href="https://github.com/xlnl" passHref>
+            <Image w="30px" src="../github-sign.svg"></Image>
+          </Link>
+          <Link href="https://www.linkedin.com/in/lamanhle/" passHref>
+            <Image w="30px" src="../linkedin.svg"></Image>
+          </Link>
+          <Image w="40px" src="../email.svg"></Image>
+          <Text color={colorSecondary[colorMode]}>lamanhle@gmail.com</Text>
+        </HStack>
+        <HStack>
+        </HStack>
       </Flex>
+      <Spacer />
     </Stack>
   )
 }
