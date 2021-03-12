@@ -41,7 +41,7 @@ export default function Projects() {
     gh: "https://github.com/xlnl/project-one-tetris",
     dep: "https://xlnl.github.io/project-one-tetris/",
     title: "Tootris",
-    description: "A quirky take on (and unique rendition of) Tetris, this web application utilizes vanilla Javascript, HTML5 Canvas, CSS, game logic, and DOM manipulation. Theme inspiration: International World Toilet Day (which conveniently falls on my birthday). We extract meaning from the mundane, huh?"
+    description: "A quirky take on (and unique rendition of) Tetris, this web application utilizes vanilla Javascript, HTML5 Canvas, CSS, game logic, and DOM manipulation. Inspiration: International World Toilet Day (which conveniently falls on my birthday)."
   }
 
   const project2 = {
@@ -68,7 +68,7 @@ export default function Projects() {
     gh: "https://github.com/xlnl/lam-portfolio",
     dep: "https://lam-anhle.vercel.app/",
     title: "Lam's Portfolio",
-    description: "A Next.js professional portfolio bootstrapped with React, utilizing Chakra-UI to showcase me, myself, and I!"
+    description: "A Next.js professional portfolio bootstrapped with React, utilizing Chakra-UI and Express Lab's 'pure-react-carousel' to showcase me, myself, and I!"
   }
  // make this into a gallery function later 
   return (
