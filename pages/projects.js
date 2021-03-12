@@ -8,9 +8,19 @@ import {
   Image,
   Button,
   HStack,
-  Link
+  Link, 
+  Spacer
 } from '@chakra-ui/react'
 
+import { 
+  CarouselProvider, 
+  Slider, 
+  Slide, 
+  ButtonBack, 
+  ButtonNext 
+} from 'pure-react-carousel';
+
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 export default function About() {
@@ -65,7 +75,7 @@ export default function About() {
     <>
       <Stack
         as="main"
-        spacing={8}
+        // spacing={8}
         alignItems="flex-start"
         m="0 auto 2rem auto"
         maxWidth="700px"
@@ -73,165 +83,178 @@ export default function About() {
       >
         <Heading>My Work</Heading>
         <Flex
-          flexDirection="row"
+          flexDirection="column"
           justifyContent="flex-start"
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Box w="350px" h="400px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
-            <Image w="330px" src={project1.imageUrl} alt={project1.imageAlt} />
+          <CarouselProvider
+            visibleSlides={1}
+            naturalSlideWidth={300}
+            naturalSlideHeight={400}
+            isIntrinsicHeight={true}
+            totalSlides={4}
+            interval={8000}
+            dragStep={2}
+            infinite="true"
+          >
+            <Slider>
+              <Slide index={0}>
+                <HStack>
+                  <Box w="600px" h="300px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
+                    <Image w="330px" src={project1.imageUrl} alt={project1.imageAlt} />
 
-            <Box p="6">
-              <Box
-                mt="1"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-              >
-                {project1.title}
-              </Box>
+                    <Box p="6">
+                      <Box
+                        mt="1"
+                        fontWeight="semibold"
+                        as="h3"
+                        lineHeight="tight"
+                        isTruncated
+                      >
+                        {project1.title}
+                      </Box>
 
-              <Box>
-                <Text fontSize="14px">{project1.description}</Text>
-              </Box>
+                      <Box>
+                        <Text fontSize="12px">{project1.description}</Text>
+                      </Box>
+                      <Spacer />
+                      <HStack p={2}>
+                        <Box>
+                          <Link href={project1.gh} passHref>
+                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                          </Link>
+                        </Box>
 
-              <HStack p={1} spacing={2}>
-                <Box>
-                  <Link href={project1.gh} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                  </Link>
+                        <Box>
+                          <Link href={project1.dep} passHref>
+                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                          </Link>
+                        </Box>
+                      </HStack>
+
+                    </Box>
+                  </Box>
+                </HStack>  
+              </Slide>
+              <Slide index={1}>
+                <Box  w="600px" h="300px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
+                  <Image src={project2.imageUrl} alt={project2.imageAlt} />
+
+                  <Box p="6">
+                    <Box
+                      mt="1"
+                      fontWeight="semibold"
+                      as="h4"
+                      lineHeight="tight"
+                      isTruncated
+                    >
+                      {project2.title}
+                    </Box>
+
+                    <Box>
+                      <Text fontSize="14px">{project2.description}</Text>
+                    </Box>
+
+                    <HStack p={1} spacing={2}>
+                      <Box>
+                        <Link href={project2.gh} passHref>
+                          <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                        </Link>
+                      </Box>
+
+                      <Box>
+                        <Link href={project2.dep} passHref>
+                          <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                        </Link>
+                      </Box>
+                    </HStack>
+
+                  </Box>
                 </Box>
+              </Slide>
+              <Slide index={2}>
+                <Box  w="600px" h="300px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
+                  <Image src={project3.imageUrl} alt={project3.imageAlt} />
 
-                <Box>
-                  <Link href={project1.dep} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
-                  </Link>
+                  <Box p="6">
+                    <Box
+                      mt="1"
+                      fontWeight="semibold"
+                      as="h4"
+                      lineHeight="tight"
+                      isTruncated
+                    >
+                      {project3.title}
+                    </Box>
+
+                    <Box>
+                      <Text fontSize="14px">{project3.description}</Text>
+                    </Box>
+
+                    <HStack p={1} spacing={2}>
+                      <Box>
+                        <Link href={project3.gh} passHref>
+                          <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                        </Link>
+                      </Box>
+
+                      <Box>
+                        <Link href={project3.dep} passHref>
+                          <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                        </Link>
+                      </Box>
+                    </HStack>
+
+                  </Box>
                 </Box>
-              </HStack>
+              </Slide>
+              <Slide index={3}>
+                <Box  w="600px" h="300px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
+                  <Image src={project4.imageUrl} alt={project4.imageAlt} />
 
-            </Box>
-          </Box>
+                  <Box p="6">
+                    <Box
+                      mt="1"
+                      fontWeight="semibold"
+                      as="h4"
+                      lineHeight="tight"
+                      isTruncated
+                    >
+                      {project4.title}
+                    </Box>
 
-          <Box w="350px" h="400px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
-            <Image src={project2.imageUrl} alt={project2.imageAlt} />
+                    <Box>
+                      <Text fontSize="14px">{project4.description}</Text>
+                    </Box>
 
-            <Box p="6">
-              <Box
-                mt="1"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-              >
-                {project2.title}
-              </Box>
+                    <HStack p={1} spacing={2}>
+                      <Box>
+                        <Link href={project4.gh} passHref>
+                          <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                        </Link>
+                      </Box>
 
-              <Box>
-                <Text fontSize="14px">{project2.description}</Text>
-              </Box>
+                      <Box>
+                        <Link href={project4.dep} passHref>
+                          <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                        </Link>
+                      </Box>
+                    </HStack>
 
-              <HStack p={1} spacing={2}>
-                <Box>
-                  <Link href={project2.gh} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                  </Link>
+                  </Box>
                 </Box>
-
-                <Box>
-                  <Link href={project2.dep} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
-                  </Link>
-                </Box>
-              </HStack>
-
-            </Box>
-          </Box>
-        </Flex>
-      </Stack>
-      <Stack
-        as="main"
-        spacing={8}
-        alignItems="flex-start"
-        m="0 auto 4rem auto"
-        maxWidth="700px"
-        px={2}
-      >
-        <Flex
-          flexDirection="row"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          maxWidth="700px"
-        >
-          <Box w="350px" h="400px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
-            <Image src={project3.imageUrl} alt={project3.imageAlt} />
-
-            <Box p="6">
-              <Box
-                mt="1"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-              >
-                {project3.title}
-              </Box>
-
-              <Box>
-                <Text fontSize="14px">{project3.description}</Text>
-              </Box>
-
-              <HStack p={1} spacing={2}>
-                <Box>
-                  <Link href={project3.gh} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                  </Link>
-                </Box>
-
-                <Box>
-                  <Link href={project3.dep} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
-                  </Link>
-                </Box>
-              </HStack>
-
-            </Box>
-          </Box>
-
-          <Box w="350px" h="400px" borderWidth="1px" borderRadius="lg" overflow="hidden" p="10px" m="0 .25rem">
-            <Image src={project4.imageUrl} alt={project4.imageAlt} />
-
-            <Box p="6">
-              <Box
-                mt="1"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated
-              >
-                {project4.title}
-              </Box>
-
-              <Box>
-                <Text fontSize="14px">{project4.description}</Text>
-              </Box>
-
-              <HStack p={1} spacing={2}>
-                <Box>
-                  <Link href={project4.gh} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                  </Link>
-                </Box>
-
-                <Box>
-                  <Link href={project4.dep} passHref>
-                    <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
-                  </Link>
-                </Box>
-              </HStack>
-
-            </Box>
-          </Box>
+              </Slide>
+            </Slider>
+            <HStack p={5}>
+              <Button>
+                <ButtonBack>Back</ButtonBack>
+              </Button>
+              <Button>
+                <ButtonNext>Next</ButtonNext>
+              </Button>
+            </HStack>
+          </CarouselProvider>
         </Flex>
       </Stack>
     </>

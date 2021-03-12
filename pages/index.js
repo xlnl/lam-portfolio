@@ -12,6 +12,7 @@ import {
 import About from './about'
 import Projects from './projects'
 import Contact from './contact'
+import Carousel from '../components/Carousel'
 
 export default function Index() {
   const { colorMode } = useColorMode()
