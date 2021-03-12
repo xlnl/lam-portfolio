@@ -73,28 +73,28 @@ const Layout = ({ children }) => {
                     <MenuButton as={Button} variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ChevronDownIcon />}>Menu</MenuButton>
                     <MenuList>
                         <MenuItem>
-                            <NextLink href="/about"> About
+                            <NextLink href="/about" passHref> About
                                 {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                                     About
                                 </Button> */}
                             </NextLink>
                         </MenuItem>
                         <MenuItem>
-                            <NextLink href="/work"> Work
+                            <NextLink href="/work" passHref> Work
                                 {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                                     Projects
                                 </Button> */}
                             </NextLink>
                         </MenuItem>
                         <MenuItem>
-                            <NextLink href="/contact"> Contact
+                            <NextLink href="/contact" passHref> Contact
                                 {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                                     Contact
                                 </Button> */}
                             </NextLink>
                         </MenuItem>
                         <MenuItem>
-                            <NextLink href="https://drive.google.com/file/d/1vV4zCZ4s8uK_wNQew6Um50fXeuAKX6An/view?usp=sharing"> Resume
+                            <NextLink href="https://drive.google.com/file/d/1vV4zCZ4s8uK_wNQew6Um50fXeuAKX6An/view?usp=sharing" passHref> Resume
                                 {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                                     Contact
                                 </Button> */}
