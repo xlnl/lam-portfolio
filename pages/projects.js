@@ -93,17 +93,21 @@ export default function Projects() {
             totalSlides={4}
             infinite="true"
           >              
-            <HStack spacing={400}>
-                <Heading>My Code</Heading>
-                <HStack p={5}>
-                  <Button size="md" variant="ghost" color="orange.300">
-                    <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
-                  </Button>
-                  <Button size="md" variant="ghost" color="orange.300">
-                    <ButtonNext><ChevronRightIcon w={6} h={6}/></ButtonNext>
-                  </Button>
-                </HStack>
-            </HStack>
+              <HStack spacing={400} maxWidth="800px">
+                  <Box>
+                      <Heading>My Code</Heading>
+                  </Box>
+                  <Box>
+                      <HStack p={5}>
+                          <Button size="md" variant="ghost" color="orange.300">
+                              <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
+                          </Button>
+                          <Button size="md" variant="ghost" color="orange.300">
+                              <ButtonNext><ChevronRightIcon w={6} h={6}/></ButtonNext>
+                          </Button>
+                      </HStack> 
+                  </Box>
+              </HStack>
             <Slider>
               <Slide index={0}>
                 <Flex>
