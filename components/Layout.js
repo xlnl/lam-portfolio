@@ -60,48 +60,48 @@ const Layout = ({ children }) => {
                 mb={[0, 0, 8]}
                 mx="auto"
             >
-                    <DarkModeSwitch />
-                    <NextLink href="/" passHref> 
-                        {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                            Home
-                        </Button> */}
-                        <Image 
-                        w="50px"
-                        src="../Lam-Logo.png" alt="Lam-Anh N. Le" />
-                    </NextLink>
-                    <Menu>
-                        <MenuButton as={Button} variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ChevronDownIcon />}>Menu</MenuButton>
-                        <MenuList>
-                            <MenuItem>
-                                <NextLink href="/about" passHref> About
-                                    {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                                        About
-                                    </Button> */}
-                                </NextLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <NextLink href="/work" passHref> Work
-                                    {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                                        Projects
-                                    </Button> */}
-                                </NextLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <NextLink href="/contact" passHref> Contact
-                                    {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                                        Contact
-                                    </Button> */}
-                                </NextLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <NextLink href="https://drive.google.com/file/d/1vV4zCZ4s8uK_wNQew6Um50fXeuAKX6An/view?usp=sharing" passHref> Resume
-                                    {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                                        Contact
-                                    </Button> */}
-                                </NextLink>
-                            </MenuItem>
-                        </MenuList>
-                    </Menu>
+                <DarkModeSwitch />
+                <NextLink href="/"> 
+                    {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                        Home
+                    </Button> */}
+                    <Image 
+                    w="50px"
+                    src="../Lam-Logo.png" alt="Lam-Anh N. Le" />
+                </NextLink>
+                <Menu>
+                    <MenuButton as={Button} variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ChevronDownIcon />}>Menu</MenuButton>
+                    <MenuList>
+                        <MenuItem>
+                            <NextLink href="/about"> About
+                                {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                                    About
+                                </Button> */}
+                            </NextLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <NextLink href="/work"> Work
+                                {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                                    Projects
+                                </Button> */}
+                            </NextLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <NextLink href="/contact"> Contact
+                                {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                                    Contact
+                                </Button> */}
+                            </NextLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <NextLink href="https://drive.google.com/file/d/1vV4zCZ4s8uK_wNQew6Um50fXeuAKX6An/view?usp=sharing"> Resume
+                                {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                                    Contact
+                                </Button> */}
+                            </NextLink>
+                        </MenuItem>
+                    </MenuList>
+                </Menu>
             </StickyNav >
             <Flex
                 as="main"

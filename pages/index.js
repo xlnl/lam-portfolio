@@ -3,9 +3,6 @@ import {
   useColorMode,
   Stack, 
   Flex, 
-  Image, 
-  Box, 
-  Heading
 } from '@chakra-ui/react'
 
 // import Layout from '../components/Layout'
@@ -20,6 +17,12 @@ export default function Index() {
     light: 'gray.700',
     dark: 'gray.400'
   }
+
+  const showContent = (e) => {
+    e.preventDefault()
+
+  }
+
   return (
     <>
       <Head>
