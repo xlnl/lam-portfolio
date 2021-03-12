@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
                                 </NextLink>
                             </MenuItem>
                             <MenuItem>
-                                <NextLink href="/projects" passHref> Projects
+                                <NextLink href="/work" passHref> Work
                                     {/* <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                                         Projects
                                     </Button> */}

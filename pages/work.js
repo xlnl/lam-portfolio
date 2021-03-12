@@ -1,20 +1,13 @@
-import Head from 'next/head'
 import {
   useColorMode,
   Stack, 
   Flex, 
-  Image, 
-  Box, 
-  Heading
 } from '@chakra-ui/react'
 
-// import Layout from '../components/Layout'
-import Landing from './landing'
-import About from './about'
-import Work from './work'
-import Contact from './contact'
+import Projects from './projects'
+import Research from './research'
 
-export default function Index() {
+export default function Work() {
   const { colorMode } = useColorMode()
   const colorSecondary = {
     light: 'gray.700',
@@ -22,9 +15,6 @@ export default function Index() {
   }
   return (
     <>
-      <Head>
-        <title>Lam-Anh Le</title>
-      </Head>
       <Stack
         as="main"
         spacing={8}
@@ -38,10 +28,8 @@ export default function Index() {
         alignItems="flex-start"
         maxWidth="700px"
         >
-          <Landing />
-          <About />
-          <Work />
-          <Contact />
+          <Projects />
+          <Research />
         </Flex>
       </Stack>
     </>
