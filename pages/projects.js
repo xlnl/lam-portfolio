@@ -41,7 +41,7 @@ export default function Projects() {
     gh: "https://github.com/xlnl/project-one-tetris",
     dep: "https://xlnl.github.io/project-one-tetris/",
     title: "Tootris",
-    description: "A quirky take on (and unique rendition of) Tetris, this web application utilizes vanilla Javascript, HTML5 Canvas, CSS, game logic, and DOM manipulation."
+    description: "A quirky take on (and unique rendition of) Tetris, this web application utilizes vanilla Javascript, HTML5 Canvas, CSS, game logic, and DOM manipulation. Theme inspiration: International World Toilet Day (which conveniently falls on my birthday). We extract meaning from the mundane, huh?"
   }
 
   const project2 = {
