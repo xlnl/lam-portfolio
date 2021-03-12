@@ -98,12 +98,13 @@ export default function Research() {
                             <Spacer />
                             <Box>
                                 <HStack p={5}>
-                                    <Button size="md" variant="ghost" color="orange.400">
-                                        <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
-                                    </Button>
-                                    <Button size="md" variant="ghost" color="orange.400">
-                                        <ButtonNext><ChevronRightIcon w={6} h={6}/></ButtonNext>
-                                    </Button>
+                                    <ButtonBack>
+                                        <ChevronLeftIcon w={6} h={6} size="md" variant="ghost" color="orange.400"/>
+                                    </ButtonBack>
+                            
+                                    <ButtonNext>
+                                        <ChevronRightIcon w={6} h={6} size="md" variant="ghost" color="orange.400"/>
+                                    </ButtonNext>
                                 </HStack> 
                             </Box>
                         </HStack>
@@ -126,7 +127,7 @@ export default function Research() {
                                             <Text fontSize="xs">{paper1.date}</Text>
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" noOfLines={[1, 2, 4]}>{paper1.description}</Text>
+                                            <Text fontSize="sm" noOfLines={[2, 3, 5]}>{paper1.description}</Text>
                                         </Box>
                                         <Spacer />
                                         <Link href={paper1.link} passHref>
@@ -153,7 +154,7 @@ export default function Research() {
                                             <Text fontSize="xs">{paper2.date}</Text>
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" noOfLines={[1, 2, 4]}>{paper2.description}</Text>
+                                            <Text fontSize="sm" noOfLines={[2, 3, 5]}>{paper2.description}</Text>
                                         </Box>
                                         <Spacer />
                                         <Link href={paper2.link} passHref>
@@ -180,7 +181,7 @@ export default function Research() {
                                             <Text fontSize="xs">{paper3.date}</Text>
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" noOfLines={[1, 2, 4]}>{paper3.description}</Text>
+                                            <Text fontSize="sm" noOfLines={[2, 3, 5]}>{paper3.description}</Text>
                                         </Box>
                                         <Spacer />
                                         <Link href={paper3.link} passHref>
@@ -207,7 +208,7 @@ export default function Research() {
                                             <Text fontSize="xs">{paper4.date}</Text>
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" noOfLines={[1, 2, 4]}>{paper4.description}</Text>
+                                            <Text fontSize="sm" noOfLines={[2, 3, 5]}>{paper4.description}</Text>
                                         </Box>
                                         <Spacer />
                                         <Link href={paper4.link} passHref>
@@ -234,7 +235,7 @@ export default function Research() {
                                             <Text fontSize="xs">{paper5.date}</Text>
                                         </Box>
                                         <Box>
-                                            <Text fontSize="sm" noOfLines={[1, 2, 3]}>{paper5.description}</Text>
+                                            <Text fontSize="sm" noOfLines={[2, 3, 5]}>{paper5.description}</Text>
                                         </Box>
                                         <Spacer />
                                         <Link href={paper5.link} passHref>

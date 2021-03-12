@@ -100,14 +100,15 @@ export default function Projects() {
                     </Box>
                     <Spacer />
                     <Box>
-                        <HStack p={5}>
-                            <Button size="md" variant="ghost" color="orange.400">
-                                <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
-                            </Button>
-                            <Button size="md" variant="ghost" color="orange.400">
-                                <ButtonNext><ChevronRightIcon w={6} h={6}/></ButtonNext>
-                            </Button>
-                        </HStack> 
+                      <HStack p={5}>
+                          <ButtonBack>
+                              <ChevronLeftIcon w={6} h={6} size="md" variant="ghost" color="orange.400"/>
+                          </ButtonBack>
+                  
+                          <ButtonNext>
+                              <ChevronRightIcon w={6} h={6} size="md" variant="ghost" color="orange.400"/>
+                          </ButtonNext>
+                      </HStack> 
                     </Box>
                 </HStack>
               <Slider>
@@ -127,14 +128,14 @@ export default function Projects() {
                           <Spacer />
                           <HStack p={2}>
                             <Box>
-                              <Link href={project2.gh} passHref>
-                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                              <Link href={project2.gh}>
+                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 5]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
                               </Link>
                             </Box>
 
                             <Box>
-                              <Link href={project2.dep} passHref>
-                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                              <Link href={project2.dep}>
+                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 5]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
                               </Link>
                             </Box>
                           </HStack>
@@ -160,14 +161,14 @@ export default function Projects() {
                           <Spacer />
                           <HStack p={2}>
                             <Box>
-                              <Link href={project1.gh} passHref>
-                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                              <Link href={project1.gh}>
+                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 5]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
                               </Link>
                             </Box>
 
                             <Box>
-                              <Link href={project1.dep} passHref>
-                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                              <Link href={project1.dep}>
+                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 5]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
                               </Link>
                             </Box>
                           </HStack>
@@ -193,13 +194,13 @@ export default function Projects() {
                           <Spacer />
                           <HStack p={2}>
                             <Box>
-                              <Link href={project3.gh} passHref>
+                              <Link href={project3.gh}>
                                 <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
                               </Link>
                             </Box>
 
                             <Box>
-                              <Link href={project3.dep} passHref>
+                              <Link href={project3.dep}>
                                 <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
                               </Link>
                             </Box>
@@ -226,13 +227,13 @@ export default function Projects() {
                           <Spacer />
                           <HStack p={2}>
                             <Box>
-                              <Link href={project4.gh} passHref>
+                              <Link href={project4.gh}>
                                 <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
                               </Link>
                             </Box>
 
                             <Box>
-                              <Link href={project4.dep} passHref>
+                              <Link href={project4.dep}>
                                 <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
                               </Link>
                             </Box>
