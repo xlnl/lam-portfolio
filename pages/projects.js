@@ -23,7 +23,7 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { ArrowForwardIcon, ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons'
 
-export default function About() {
+export default function Projects() {
   const { colorMode } = useColorMode()
   const colorSecondary = {
     light: 'gray.700',

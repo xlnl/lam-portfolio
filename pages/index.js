@@ -11,8 +11,8 @@ import {
 // import Layout from '../components/Layout'
 import About from './about'
 import Projects from './projects'
+import Research from './research'
 import Contact from './contact'
-import Carousel from '../components/Carousel'
 
 export default function Index() {
   const { colorMode } = useColorMode()
@@ -67,6 +67,7 @@ export default function Index() {
         >
           <About />
           <Projects />
+          <Research />
           <Contact />
         </Flex>
       </Stack>
