@@ -7,7 +7,8 @@ import {
   Spacer,
   Image,
   HStack,
-  Link
+  Link,
+  Box
 } from '@chakra-ui/react'
 
 export default function About() {
@@ -20,7 +21,7 @@ export default function About() {
   return (
     <Stack
       as="main"
-      spacing={8}
+      spacing={9}
       alignItems="flex-start"
       m="0 auto 4rem auto"
       maxWidth="700px"
@@ -31,7 +32,11 @@ export default function About() {
         justifyContent="center"
         alignItems="center"
         maxWidth="700px"
+        spacing={2}
       >
+        <Box w="200px" objectFit="cover">
+            <Image src="./handshake-colour-01.png" alt="handshake illustration" />
+        </Box>
         <Heading mb={2}>Let's Connect!</Heading>
         <HStack>
           <Link href="https://github.com/xlnl" passHref>

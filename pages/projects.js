@@ -88,7 +88,7 @@ export default function Projects() {
           <Box maxWidth={700}>
             <CarouselProvider
               visibleSlides={1}
-              naturalSlideWidth={300}
+              naturalSlideWidth={700}
               naturalSlideHeight={400}
               isIntrinsicHeight={true}
               totalSlides={4}
@@ -101,10 +101,10 @@ export default function Projects() {
                     <Spacer />
                     <Box>
                         <HStack p={5}>
-                            <Button size="md" variant="ghost" color="orange.300">
+                            <Button size="md" variant="ghost" color="orange.400">
                                 <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
                             </Button>
-                            <Button size="md" variant="ghost" color="orange.300">
+                            <Button size="md" variant="ghost" color="orange.400">
                                 <ButtonNext><ChevronRightIcon w={6} h={6}/></ButtonNext>
                             </Button>
                         </HStack> 
@@ -113,7 +113,7 @@ export default function Projects() {
               <Slider>
                 <Slide index={0}>
                   <Flex>
-                    <Box w="700px" h="200px">
+                    <Box w="690px" h="200px">
                       <HStack spacing={4}>
                         <Image w="300px" src={project1.imageUrl} alt={project1.imageAlt} />
                         <Box>
@@ -146,7 +146,7 @@ export default function Projects() {
                 </Slide>
                 <Slide index={1}>
                   <Flex>
-                    <Box w="700px" h="200px">
+                    <Box w="690px" h="200px">
                       <HStack spacing={4}>
                         <Image w="300px" src={project2.imageUrl} alt={project2.imageAlt} />
                         <Box>
@@ -179,7 +179,7 @@ export default function Projects() {
                 </Slide>
                 <Slide index={2}>
                   <Flex>
-                    <Box w="700px" h="200px">
+                    <Box w="690px" h="200px">
                       <HStack spacing={4}>
                         <Image w="300px" src={project3.imageUrl} alt={project3.imageAlt} />
                         <Box>
@@ -212,7 +212,7 @@ export default function Projects() {
                 </Slide>
                 <Slide index={3}>
                   <Flex>
-                    <Box w="700px" h="200px">
+                    <Box w="690px" h="200px">
                       <HStack spacing={4}>
                         <Image w="300px" src={project4.imageUrl} alt={project4.imageAlt} />
                         <Box>
