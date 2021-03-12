@@ -115,39 +115,6 @@ export default function Projects() {
                   <Flex>
                     <Box w="690px" h="200px">
                       <HStack spacing={4}>
-                        <Image w="300px" src={project1.imageUrl} alt={project1.imageAlt} />
-                        <Box>
-                          <Heading as="h4" size="md"> 
-                            {project1.title}
-                          </Heading>
-                          <Spacer />
-                          <Box h="100px">
-                            <Text fontSize="sm">{project1.description}</Text>
-                          </Box>
-                          <Spacer />
-                          <HStack p={2}>
-                            <Box>
-                              <Link href={project1.gh} passHref>
-                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                              </Link>
-                            </Box>
-
-                            <Box>
-                              <Link href={project1.dep} passHref>
-                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
-                              </Link>
-                            </Box>
-                          </HStack>
-
-                        </Box>
-                      </HStack>  
-                  </Box>
-                  </Flex>
-                </Slide>
-                <Slide index={1}>
-                  <Flex>
-                    <Box w="690px" h="200px">
-                      <HStack spacing={4}>
                         <Image w="300px" src={project2.imageUrl} alt={project2.imageAlt} />
                         <Box>
                           <Heading as="h4" size="md"> 
@@ -167,6 +134,39 @@ export default function Projects() {
 
                             <Box>
                               <Link href={project2.dep} passHref>
+                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
+                              </Link>
+                            </Box>
+                          </HStack>
+
+                        </Box>
+                      </HStack>  
+                  </Box>
+                  </Flex>
+                </Slide>
+                <Slide index={1}>
+                  <Flex>
+                    <Box w="690px" h="200px">
+                      <HStack spacing={4}>
+                        <Image w="300px" src={project1.imageUrl} alt={project1.imageAlt} />
+                        <Box>
+                          <Heading as="h4" size="md"> 
+                            {project1.title}
+                          </Heading>
+                          <Spacer />
+                          <Box h="100px">
+                            <Text fontSize="sm">{project1.description}</Text>
+                          </Box>
+                          <Spacer />
+                          <HStack p={2}>
+                            <Box>
+                              <Link href={project1.gh} passHref>
+                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                              </Link>
+                            </Box>
+
+                            <Box>
+                              <Link href={project1.dep} passHref>
                                 <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>Try the App</Button>
                               </Link>
                             </Box>
