@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lam's Portfolio
+### [Deployed App](https://lam-anhle.vercel.app/)
+## Tech Used
+* Notion & Github - for project management 
+* Figma - for wireframes 
+* Adobe Illustrator - for design assets
+* [DrawKit](https://www.drawkit.io/) & [Undraw](https://undraw.co/) - for beautiful, customizable illustrations
+* NextJS + ReactJS - framework
+* Chakra-UI - for styling and general UI
+* Pure React Carousel - by Express Labs
 
-## Getting Started
+## General Approach
+The purpose of this project was to showcase my work relating to software development in addition to the writing/research I've done within the past two years. 
 
-First, run the development server:
+The goal is to present myself as a creative, capable analyst developer who has great care for collaboration, details, and digital transformation as it relates to international development. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## User Stories
+### MVP
+As a user, I want to be able to: 
+* see a landing page before I can read more
+* see a sticky navbar with a menu of the apps pages
+* see a smooth, visually appealing display of the projects and research papers
+* see a contact section with relevant information
+### STRETCH
+As a user, I want to be able to: 
+* use a carousel/gallery of sorts to see details of just one project at a time 
+* read more about other works beyond web applications
+* connect using a contact form that directs message to an inbox 
+* see tasteful animations that doesn't distract from the contact
+* download the resume directly from the app 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Major Hurdles & Unsolved Problems 
+Presenting visually appealing data is a top priority for me as I developed this portfolio. I scoured the net for the best carousel component as I found Chakra-UI to lack a component that was as flexible and customizable as I would like. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+My next step is to optimize for mobile users and improve the responsiveness of the app. 
