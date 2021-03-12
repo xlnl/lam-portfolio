@@ -10,7 +10,6 @@ import {
   HStack,
   Link, 
   Spacer, 
-  Container
 } from '@chakra-ui/react'
 
 import { 
@@ -95,7 +94,7 @@ export default function About() {
             infinite="true"
           >              
             <HStack spacing={400}>
-                <Heading>My Work</Heading>
+                <Heading>My Code</Heading>
                 <HStack p={5}>
                   <Button size="md" variant="ghost" color="orange.300">
                     <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
@@ -108,22 +107,16 @@ export default function About() {
             <Slider>
               <Slide index={0}>
                 <Flex>
-                  <Box w="700px" h="200px" borderRadius="md">
-                    <HStack>
+                  <Box w="700px" h="200px">
+                    <HStack spacing={4}>
                       <Image w="300px" src={project1.imageUrl} alt={project1.imageAlt} />
-                      <Box p="6">
-                        <Box
-                          mt="1"
-                          fontWeight="semibold"
-                          as="h3"
-                          lineHeight="tight"
-                          isTruncated
-                        >
+                      <Box>
+                        <Heading as="h4" size="md"> 
                           {project1.title}
-                        </Box>
+                        </Heading>
                         <Spacer />
                         <Box h="100px">
-                          <Text fontSize="12px">{project1.description}</Text>
+                          <Text fontSize="sm">{project1.description}</Text>
                         </Box>
                         <Spacer />
                         <HStack p={2}>
@@ -147,22 +140,16 @@ export default function About() {
               </Slide>
               <Slide index={1}>
                 <Flex>
-                  <Box w="700px" h="200px" borderRadius="sm" p={2}>
-                    <HStack>
+                  <Box w="700px" h="200px">
+                    <HStack spacing={4}>
                       <Image w="300px" src={project2.imageUrl} alt={project2.imageAlt} />
-                      <Box p="6">
-                        <Box
-                          mt="1"
-                          fontWeight="semibold"
-                          as="h3"
-                          lineHeight="tight"
-                          isTruncated
-                        >
+                      <Box>
+                        <Heading as="h4" size="md"> 
                           {project2.title}
-                        </Box>
+                        </Heading>
                         <Spacer />
-                        <Box>
-                          <Text fontSize="12px">{project2.description}</Text>
+                        <Box h="100px">
+                          <Text fontSize="sm">{project2.description}</Text>
                         </Box>
                         <Spacer />
                         <HStack p={2}>
@@ -186,22 +173,16 @@ export default function About() {
               </Slide>
               <Slide index={2}>
                 <Flex>
-                  <Box w="700px" h="200px" borderRadius="sm" p={2}>
-                    <HStack>
+                  <Box w="700px" h="200px">
+                    <HStack spacing={4}>
                       <Image w="300px" src={project3.imageUrl} alt={project3.imageAlt} />
-                      <Box p="6">
-                        <Box
-                          mt="1"
-                          fontWeight="semibold"
-                          as="h3"
-                          lineHeight="tight"
-                          isTruncated
-                        >
+                      <Box>
+                        <Heading as="h4" size="md"> 
                           {project3.title}
-                        </Box>
+                        </Heading>
                         <Spacer />
-                        <Box>
-                          <Text fontSize="12px">{project3.description}</Text>
+                        <Box h="100px">
+                          <Text fontSize="sm">{project3.description}</Text>
                         </Box>
                         <Spacer />
                         <HStack p={2}>
@@ -225,22 +206,16 @@ export default function About() {
               </Slide>
               <Slide index={3}>
                 <Flex>
-                  <Box w="700px" h="200px" borderRadius="sm" p={2}>
-                    <HStack>
+                  <Box w="700px" h="200px">
+                    <HStack spacing={4}>
                       <Image w="300px" src={project4.imageUrl} alt={project4.imageAlt} />
-                      <Box p="6">
-                        <Box
-                          mt="1"
-                          fontWeight="semibold"
-                          as="h3"
-                          lineHeight="tight"
-                          isTruncated
-                        >
+                      <Box>
+                        <Heading as="h4" size="md"> 
                           {project4.title}
-                        </Box>
+                        </Heading>
                         <Spacer />
-                        <Box>
-                          <Text fontSize="12px">{project4.description}</Text>
+                        <Box h="100px">
+                          <Text fontSize="sm">{project4.description}</Text>
                         </Box>
                         <Spacer />
                         <HStack p={2}>
