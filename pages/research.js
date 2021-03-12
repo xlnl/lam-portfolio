@@ -70,24 +70,28 @@ export default function Research() {
         <Stack
             as="main"
             alignItems="flex-start"
+            w={800}
         >
             <Flex
             flexDirection="column"
             justifyContent="flex-start"
             alignItems="flex-start"
+            w={700}
             >
-                <Box>
+                <Box maxWidth={700}>
                     <CarouselProvider
                         visibleSlides={2}
-                        naturalSlideWidth={800}
+                        naturalSlideWidth={700}
                         naturalSlideHeight={400}
+
                         totalSlides={5}
                         infinite="true"
                     >              
-                        <HStack>
+                        <HStack maxWidth={700}>
                             <Box>
                                 <Heading>My Writing</Heading>
                             </Box>
+                            <Spacer />
                             <Box>
                                 <HStack p={5}>
                                     <Button size="md" variant="ghost" color="orange.300">
@@ -100,111 +104,111 @@ export default function Research() {
                             </Box>
                         </HStack>
                         <Slider>
-                        <Slide index={0}>
-                            <Flex>
-                                <Box w="300px" h="300px">
-                                    <Box>
-                                        <Heading as="h4" size="md"> 
-                                        {paper1.title}
-                                        </Heading>
-                                        <Spacer />
-                                        <Box h="100px">
-                                        <Text fontSize="sm">{paper1.description}</Text>
-                                        </Box>
-                                        <Spacer />
+                            <Slide index={0}>
+                                <Flex>
+                                    <Box w="350px" h="300px">
                                         <Box>
-                                            <Link href={paper1.link} passHref>
-                                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                                            </Link>
+                                            <Heading as="h4" size="md"> 
+                                            {paper1.title}
+                                            </Heading>
+                                            <Spacer />
+                                            <Box h="100px">
+                                            <Text fontSize="sm">{paper1.description}</Text>
+                                            </Box>
+                                            <Spacer />
+                                            <Box>
+                                                <Link href={paper1.link} passHref>
+                                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                                                </Link>
+                                            </Box>
                                         </Box>
                                     </Box>
-                                </Box>
-                            </Flex>
-                        </Slide>
-                        <Slide index={1}>
-                            <Flex>
-                                <Box w="300px" h="300px">
-                                    <Box>
-                                        <Heading as="h4" size="md"> 
-                                        {paper2.title}
-                                        </Heading>
-                                        <Spacer />
-                                        <Box h="100px">
-                                        <Text fontSize="sm">{paper2.description}</Text>
-                                        </Box>
-                                        <Spacer />
+                                </Flex>
+                            </Slide>
+                            <Slide index={1}>
+                                <Flex>
+                                    <Box w="300px" h="300px">
                                         <Box>
-                                            <Link href={paper2.link} passHref>
-                                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                                            </Link>
+                                            <Heading as="h4" size="md"> 
+                                            {paper2.title}
+                                            </Heading>
+                                            <Spacer />
+                                            <Box h="100px">
+                                            <Text fontSize="sm">{paper2.description}</Text>
+                                            </Box>
+                                            <Spacer />
+                                            <Box>
+                                                <Link href={paper2.link} passHref>
+                                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                                                </Link>
+                                            </Box>
                                         </Box>
                                     </Box>
-                                </Box>
-                            </Flex>
-                        </Slide>
-                        <Slide index={2}>
-                            <Flex>
-                                <Box w="300px" h="300px">
-                                    <Box>
-                                        <Heading as="h4" size="md"> 
-                                        {paper3.title}
-                                        </Heading>
-                                        <Spacer />
-                                        <Box h="100px">
-                                        <Text fontSize="sm">{paper3.description}</Text>
-                                        </Box>
-                                        <Spacer />
+                                </Flex>
+                            </Slide>
+                            <Slide index={2}>
+                                <Flex>
+                                    <Box w="300px" h="300px">
                                         <Box>
-                                            <Link href={paper3.link} passHref>
-                                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                                            </Link>
+                                            <Heading as="h4" size="md"> 
+                                            {paper3.title}
+                                            </Heading>
+                                            <Spacer />
+                                            <Box h="100px">
+                                            <Text fontSize="sm">{paper3.description}</Text>
+                                            </Box>
+                                            <Spacer />
+                                            <Box>
+                                                <Link href={paper3.link} passHref>
+                                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                                                </Link>
+                                            </Box>
                                         </Box>
                                     </Box>
-                                </Box>
-                            </Flex>
-                        </Slide>
-                        <Slide index={3}>
-                            <Flex>
-                                <Box w="300px" h="300px">
-                                    <Box>
-                                        <Heading as="h4" size="md"> 
-                                        {paper4.title}
-                                        </Heading>
-                                        <Spacer />
-                                        <Box h="100px">
-                                        <Text fontSize="sm">{paper4.description}</Text>
-                                        </Box>
-                                        <Spacer />
+                                </Flex>
+                            </Slide>
+                            <Slide index={3}>
+                                <Flex>
+                                    <Box w="300px" h="300px">
                                         <Box>
-                                            <Link href={paper4.link} passHref>
-                                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                                            </Link>
+                                            <Heading as="h4" size="md"> 
+                                            {paper4.title}
+                                            </Heading>
+                                            <Spacer />
+                                            <Box h="100px">
+                                            <Text fontSize="sm">{paper4.description}</Text>
+                                            </Box>
+                                            <Spacer />
+                                            <Box>
+                                                <Link href={paper4.link} passHref>
+                                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                                                </Link>
+                                            </Box>
                                         </Box>
                                     </Box>
-                                </Box>
-                            </Flex>
-                        </Slide>
-                        <Slide index={4}>
-                            <Flex>
-                                <Box w="300px" h="300px">
-                                    <Box>
-                                        <Heading as="h4" size="md"> 
-                                        {paper5.title}
-                                        </Heading>
-                                        <Spacer />
-                                        <Box h="100px">
-                                        <Text fontSize="sm">{paper5.description}</Text>
-                                        </Box>
-                                        <Spacer />
+                                </Flex>
+                            </Slide>
+                            <Slide index={4}>
+                                <Flex>
+                                    <Box w="300px" h="300px">
                                         <Box>
-                                            <Link href={paper5.link} passHref>
-                                            <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
-                                            </Link>
+                                            <Heading as="h4" size="md"> 
+                                            {paper5.title}
+                                            </Heading>
+                                            <Spacer />
+                                            <Box h="100px">
+                                            <Text fontSize="sm">{paper5.description}</Text>
+                                            </Box>
+                                            <Spacer />
+                                            <Box>
+                                                <Link href={paper5.link} passHref>
+                                                <Button size="sm" fontSize="12px" variant="ghost" p={[1, 2, 4]}  _hover={{ backgroundColor: navHoverBg[colorMode] }} rightIcon={<ArrowForwardIcon />}>See the Code</Button>
+                                                </Link>
+                                            </Box>
                                         </Box>
                                     </Box>
-                                </Box>
-                            </Flex>
-                        </Slide>
+                                </Flex>
+                            </Slide>
                         </Slider>
                         <Spacer />
                     </CarouselProvider>
