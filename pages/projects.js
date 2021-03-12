@@ -9,7 +9,8 @@ import {
   Button,
   HStack,
   Link, 
-  Spacer
+  Spacer, 
+  Container
 } from '@chakra-ui/react'
 
 import { 
@@ -92,22 +93,22 @@ export default function About() {
             isIntrinsicHeight={true}
             totalSlides={4}
             infinite="true"
-          >
-            <HStack>
-              <Heading>My Work</Heading>
-              <HStack p={5}>
-                <Button size="xs">
-                  <ButtonBack><ChevronLeftIcon /></ButtonBack>
-                </Button>
-                <Button size="xs">
-                  <ButtonNext><ChevronRightIcon /></ButtonNext>
-                </Button>
-              </HStack>
+          >              
+            <HStack spacing={400}>
+                <Heading>My Work</Heading>
+                <HStack p={5}>
+                  <Button size="md" variant="ghost" color="orange.300">
+                    <ButtonBack><ChevronLeftIcon w={6} h={6}/></ButtonBack>
+                  </Button>
+                  <Button size="md" variant="ghost" color="orange.300">
+                    <ButtonNext><ChevronRightIcon w={6} h={6}/></ButtonNext>
+                  </Button>
+                </HStack>
             </HStack>
             <Slider>
               <Slide index={0}>
                 <Flex>
-                  <Box w="700px" h="200px" borderWidth="1px" borderRadius="sm" p={2}>
+                  <Box w="700px" h="200px" borderRadius="md">
                     <HStack>
                       <Image w="300px" src={project1.imageUrl} alt={project1.imageAlt} />
                       <Box p="6">
@@ -121,7 +122,7 @@ export default function About() {
                           {project1.title}
                         </Box>
                         <Spacer />
-                        <Box>
+                        <Box h="100px">
                           <Text fontSize="12px">{project1.description}</Text>
                         </Box>
                         <Spacer />
@@ -146,7 +147,7 @@ export default function About() {
               </Slide>
               <Slide index={1}>
                 <Flex>
-                  <Box w="700px" h="200px" borderWidth="1px" borderRadius="sm" p={2}>
+                  <Box w="700px" h="200px" borderRadius="sm" p={2}>
                     <HStack>
                       <Image w="300px" src={project2.imageUrl} alt={project2.imageAlt} />
                       <Box p="6">
@@ -185,7 +186,7 @@ export default function About() {
               </Slide>
               <Slide index={2}>
                 <Flex>
-                  <Box w="700px" h="200px" borderWidth="1px" borderRadius="sm" p={2}>
+                  <Box w="700px" h="200px" borderRadius="sm" p={2}>
                     <HStack>
                       <Image w="300px" src={project3.imageUrl} alt={project3.imageAlt} />
                       <Box p="6">
@@ -224,7 +225,7 @@ export default function About() {
               </Slide>
               <Slide index={3}>
                 <Flex>
-                  <Box w="700px" h="200px" borderWidth="1px" borderRadius="sm" p={2}>
+                  <Box w="700px" h="200px" borderRadius="sm" p={2}>
                     <HStack>
                       <Image w="300px" src={project4.imageUrl} alt={project4.imageAlt} />
                       <Box p="6">
@@ -262,6 +263,7 @@ export default function About() {
                 </Flex>
               </Slide>
             </Slider>
+            <Spacer />
           </CarouselProvider>
         </Flex>
       </Stack>
